@@ -12,7 +12,7 @@ body {
 }
 
 .anaglyph {
-	text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+	text-shadow: -0.09em 0 red, 0.09em 0 cyan;
 	font-family: Helvetica;
 }
 
@@ -30,7 +30,7 @@ body {
 */
 #nav-bar {
 	background: black;
-	width: 50px;
+	width: 70px;
 	height: 100%;
 	position: absolute;
 	top: 0px;
@@ -65,21 +65,26 @@ body {
 }*/
 
 .nav-icon {
-	padding: 12px 0px 12px 0px;
+	/*padding: 5px 0px 5px 0px;*/
 	color: white;
 	font-size: 30px;
+	width: 70px;
+	height: 40px;
 }
 
 .nav-text {
 	/*padding: 12px 0px 12px 0px;*/
-	padding: 12px 0px 12px 0px;
+	/*padding: 10px 0px 10px 0px;*/
 	color: white;
 	font-size: 12px;
 	font-family: Helvetica;
+	top: -10px;
+	position: relative;
+	height: 5px;
 }
 
 .hidden {
-	display: none;
+	visibility: hidden;
 }
 
 .JS-icon {
@@ -121,5 +126,5 @@ body {
     position: absolute;
     height: 120px;
     top: 50%;
-    margin-top: -180px;
+    margin-top: -185px;
 }

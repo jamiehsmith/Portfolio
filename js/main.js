@@ -1,12 +1,22 @@
 $(document).ready(function() {
 	$(".nav-icon").hover(
 		function () {
+			console.log($(this).attr('id'))
 			$(this).addClass("anaglyph");
-			$('#home-icon').removeClass("hidden");
+			$('#' + $(this).attr('id') + "-text").removeClass("hidden");
 		},
 		function () {
 			$(this).removeClass("anaglyph");
-			$('#home-icon').addClass("hidden");
+			$('#' + $(this).attr('id') + "-text").addClass("hidden");
+		}
+	);
+	$(".nav-icon-sm").hover(
+		function () {
+			console.log($(this).attr('id'))
+			$(this).addClass("anaglyph");
+		},
+		function () {
+			$(this).removeClass("anaglyph");
 		}
 	);
 })
