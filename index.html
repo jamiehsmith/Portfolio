@@ -2,26 +2,41 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<title>Jamie Smith</title>
 	</head>
 	<body>
-		<div id="navigation">
-			<img src="img/js.png" id="logo">
-			<img src="img/home.png" class="nav-icon">
-			<img src="img/user.png" class="nav-icon">
-			<img src="img/star.png" class="nav-icon">
-			<img src="img/internet.png" class="nav-icon">
-			<img src="img/contact.png" class="nav-icon">
-			<img src="img/github.png" class="nav-icon-sm">
-			<img src="img/linkedin.png" class="nav-icon-sm">
+		<div id="nav-bar">
+			<span class='cyan'><h1 class="JS-icon" onmouseover="this.className='JS-icon anaglyph';" onmouseout="this.className='JS-icon';">JS</h1></span>
+			<div id="page-nav">
+				<span class='cyan'><i class="nav-icon fas fa-home"></i></span>
+				<span class='cyan'><span id="home-icon" class="anaglyph nav-text hidden">HOME</span></span>
+				<span class='cyan'><i class="nav-icon fas fa-user"></i></span>
+				<span class='cyan'><i class="nav-icon fas fa-drafting-compass"></i></span>
+				<span class='cyan'><i class="nav-icon fas fa-code"></i></span>
+				<span class='cyan'><i class="nav-icon fas fa-envelope"></i></span>
+				<br>
+				<br>
+			</div>
+			<div id="links">
+				<span class='cyan'><i class="nav-icon-sm fab fa-linkedin"></i></span>
+				<br>
+				<span class='cyan'><i class="nav-icon-sm fab fa-github-square"></i></span>
+				<br>
+				<span class='cyan'><i class="nav-icon-sm fab fa-twitter-square"></i></span>
+				<br>
+				<span class='cyan'><i class="nav-icon-sm fab fa-stack-overflow"></i></span>
+			</div>
 		</div>
 		<div id="page">
-			<div class="container">
-				<div id="home">
-					<h1 class="text">Hi, I'm Jamie</h1>
-				</div>
+			<div id="home">
+				<!-- <div class="container"> -->
+				<!-- <img src="img/jamiesmith.png" style:"height=400px; width=400px; "> -->
+				<span class='cyan'><h1 class='anaglyph'>Jamie Smith</h1></span>
+				<!-- <div class='cyan'><h1 class='anaglyph'>JS</h1></button>	 -->
 			</div>
 		</div>
 	</body>
-
 </html>

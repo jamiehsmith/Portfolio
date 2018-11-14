@@ -1,58 +1,125 @@
 body {
-    background: #d066a9;
-    overflow: hidden;
-    display: block;
-
+	background: white;
+	overflow: hidden;
+	display: block;
 }
 
-#logo {
+.cyan {
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.anaglyph {
+	text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+	font-family: Helvetica;
+}
+
+/*#logo {
 	height: 40px;
 	width: 60px;
 	padding: 10px;
-}
-
+}*/
+/*
 #page {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
-
-#navigation {
+*/
+#nav-bar {
 	background: black;
-	width: 85px;
+	width: 50px;
 	height: 100%;
 	position: absolute;
 	top: 0px;
 	z-index: 3;
 	min-height: 500px;
 	left: 0px;
+	text-align: center;
 }
 
-.container-jsmith {
-    width: 100%;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    top:5%;
-    margin: 0 auto;
-    z-index: 1;
+#home {
+	position: absolute;
+	left: 100px;
+	width: 100%;
+	height: 100%;
 }
 
-.text {
+/*.container-jsmith {
+	width: 100%;
+	height: 90%;
+	min-height: 566px;
+	position: absolute;
+	top:5%;
+	margin: 0 auto;
+	z-index: 1;
+}*/
+
+/*.text {
 	position: absolute;
 	top: 100px;
 	left: 200px;
 	font-family: Arial;
-}
+}*/
 
 .nav-icon {
-	width: 30px;
-	height: 30px;
-	padding: 10px 0px 10px 25px;
+	padding: 12px 0px 12px 0px;
+	color: white;
+	font-size: 30px;
 }
+
+.nav-text {
+	/*padding: 12px 0px 12px 0px;*/
+	padding: 12px 0px 12px 0px;
+	color: white;
+	font-size: 12px;
+	font-family: Helvetica;
+}
+
+.hidden {
+	display: none;
+}
+
+.JS-icon {
+	/*padding: 10px 0px 10px 0px;*/
+	color: white;
+	font-size: 30px;
+	font-family: Helvetica;
+	top: 0px;
+}
+
+/*.nav-icon-hover {
+	padding: 10px 0px 10px 0px;
+	color: black;
+	font-size: 40px;
+}*/
 
 .nav-icon-sm {
 	width: 20px;
 	height: 20px;
-	padding: 10px 0px 10px 30px;
+	padding: 10px 0px 10px 0px;
+	font-size: 20px;
+	color: white;
+}
+
+#home {
+	position: absolute;
+	left: 100px;
+	width: 100%
+}
+
+#links {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	display: block;
+}
+
+#page-nav {
+    position: absolute;
+    height: 120px;
+    top: 50%;
+    margin-top: -180px;
 }
