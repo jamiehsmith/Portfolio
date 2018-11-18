@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$(".nav-icon").hover(
 		function () {
-			console.log($(this).attr('id'))
 			$(this).addClass("anaglyph");
 			$('#' + $(this).attr('id') + "-text").removeClass("hidden");
 		},
@@ -10,9 +9,16 @@ $(document).ready(function() {
 			$('#' + $(this).attr('id') + "-text").addClass("hidden");
 		}
 	);
+	$("#JS-icon").hover(
+		function () {
+			$(this).addClass("anaglyph");
+		},
+		function () {
+			$(this).removeClass("anaglyph");
+		}
+	);
 	$(".nav-icon-sm").hover(
 		function () {
-			console.log($(this).attr('id'))
 			$(this).addClass("anaglyph");
 		},
 		function () {

@@ -1,3 +1,10 @@
+html {
+	height: 100%;
+	min-height: 100%;
+	bottom: 0;
+	position: fixed;
+}
+
 body {
 	background: white;
 	overflow: hidden;
@@ -16,18 +23,6 @@ body {
 	font-family: Helvetica;
 }
 
-/*#logo {
-	height: 40px;
-	width: 60px;
-	padding: 10px;
-}*/
-/*
-#page {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
-*/
 #nav-bar {
 	background: black;
 	width: 70px;
@@ -46,23 +41,6 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
-/*.container-jsmith {
-	width: 100%;
-	height: 90%;
-	min-height: 566px;
-	position: absolute;
-	top:5%;
-	margin: 0 auto;
-	z-index: 1;
-}*/
-
-/*.text {
-	position: absolute;
-	top: 100px;
-	left: 200px;
-	font-family: Arial;
-}*/
 
 .nav-icon {
 	/*padding: 5px 0px 5px 0px;*/
@@ -87,19 +65,15 @@ body {
 	visibility: hidden;
 }
 
-.JS-icon {
+#JS-icon {
 	/*padding: 10px 0px 10px 0px;*/
 	color: white;
-	font-size: 30px;
+	font-size: 35px;
 	font-family: Helvetica;
-	top: 0px;
+	top: 0;
+	margin-top: 10px;
+	text-align: center;
 }
-
-/*.nav-icon-hover {
-	padding: 10px 0px 10px 0px;
-	color: black;
-	font-size: 40px;
-}*/
 
 .nav-icon-sm {
 	width: 20px;
