@@ -2,25 +2,36 @@ html {
 	height: 100%;
 	min-height: 100%;
 	bottom: 0;
-	position: fixed;
+	
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 body {
 	background: white;
-	overflow: hidden;
 	display: block;
+	font-family: Helvetica;
 }
 
-.cyan {
+/*.cyan {
 	text-decoration: none;
 	border: none;
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.7);
+}*/
+
+.container {
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .anaglyph {
-	text-shadow: -0.09em 0 red, 0.09em 0 cyan;
-	font-family: Helvetica;
+	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
+	/*font-family: Helvetica;*/
 }
 
 #nav-bar {
@@ -33,21 +44,39 @@ body {
 	min-height: 500px;
 	left: 0px;
 	text-align: center;
+	position: fixed;
 }
 
 #home {
-	position: absolute;
-	left: 100px;
+	position: relative;
+	left: 60px;
 	width: 100%;
-	height: 100%;
+	height: 900px;
+	padding: 50px;
+	/*background-color: lightgray;*/
+	top: -20px;
+}
+
+#home-picture {
+	height:300px;
+	right: 250px;
+	top: 50px;
+	position: absolute;
+}
+
+#home-text {
+	top: 100px;
+	left: 100px;
+	position: absolute;
 }
 
 .nav-icon {
-	/*padding: 5px 0px 5px 0px;*/
+	padding: 2px 0px 2px 0px;
 	color: white;
 	font-size: 30px;
 	width: 70px;
 	height: 40px;
+	text-align: center;
 }
 
 .nav-text {
@@ -59,6 +88,7 @@ body {
 	top: -10px;
 	position: relative;
 	height: 5px;
+	text-align: center;
 }
 
 .hidden {
@@ -66,7 +96,6 @@ body {
 }
 
 #JS-icon {
-	/*padding: 10px 0px 10px 0px;*/
 	color: white;
 	font-size: 35px;
 	font-family: Helvetica;
@@ -81,24 +110,29 @@ body {
 	padding: 10px 0px 10px 0px;
 	font-size: 20px;
 	color: white;
+	text-align: center;
 }
 
-#home {
+/*#home {
 	position: absolute;
 	left: 100px;
 	width: 100%
 }
+*/
+
 
 #links {
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 	width: 100%;
+	height: 170px;
 	display: block;
 }
 
 #page-nav {
     position: absolute;
-    height: 120px;
+    height: 280px;
     top: 50%;
-    margin-top: -185px;
+    margin-top: -195px;
+    background-clip: padding-box;
 }

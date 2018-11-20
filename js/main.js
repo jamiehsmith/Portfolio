@@ -9,6 +9,19 @@ $(document).ready(function() {
 			$('#' + $(this).attr('id') + "-text").addClass("hidden");
 		}
 	);
+	$(".nav-text").hover(
+		function () {
+			var text_id = $(this).attr('id');
+			$('#' + text_id.substring(0, text_id.length-5)).addClass("anaglyph");
+			$(this).removeClass("hidden");
+			// $('#' + $(this).attr('id') + "-text").removeClass("hidden");
+		},
+		function () {
+			var text_id = $(this).attr('id');
+			$(this).addClass("hidden");
+			$('#' + text_id.substring(0, text_id.length-5)).removeClass("anaglyph");
+		}
+	);
 	$("#JS-icon").hover(
 		function () {
 			$(this).addClass("anaglyph");
