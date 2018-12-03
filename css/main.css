@@ -15,6 +15,22 @@ body {
 	font-family: Helvetica;
 }
 
+a.link:link {
+    color: black;
+}
+
+a.link:visited {
+    color: black;
+}
+
+a.link:hover {
+    text-shadow: -0.1em 0 red, 0.1em 0 cyan;
+}
+
+.icon_link {
+	text-decoration: none;
+}
+
 /*.cyan {
 	text-decoration: none;
 	border: none;
@@ -51,24 +67,98 @@ body {
 	position: relative;
 	left: 60px;
 	width: 100%;
-	height: 900px;
+	height: 400px;
 	padding: 50px;
 	/*background-color: lightgray;*/
-	top: -20px;
+	top: 0px;
+	line-height: 1.4;
 }
 
 #home-picture {
-	height:300px;
-	right: 250px;
-	top: 50px;
+	height:275px;
+	right: 25%;
+	top: 150px;
 	position: absolute;
+	border-radius: 50%;
 }
 
 #home-text {
-	top: 100px;
+	top: 200px;
 	left: 100px;
 	position: absolute;
 }
+
+#about {
+	position: relative;
+	left: 60px;
+	width: 80%;
+	height: 600px;
+	padding: 50px;
+	/*background-color: lightgray;*/
+	top: 0px;
+	line-height: 1.4;
+}
+
+#about-text {
+	top: 0px;
+	left: 100px;
+	position: absolute;
+	line-height: 1.4;
+	top: 200px;
+}
+
+#skills {
+	position: relative;
+	left: 60px;
+	width: 80%;
+	height: 600px;
+	padding: 50px;
+	/*background-color: lightgray;*/
+	top: 0px;
+	line-height: 1.4;
+}
+
+#skills-text {
+	top: 0px;
+	left: 100px;
+	position: absolute;
+	line-height: 1.4;
+	top: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+	#home-picture {
+		right: 20%;
+		height: 200px;
+		top: 190px;
+	}
+	#home-text {
+		top: 200px;
+		left: 50px;
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#nav-bar {
+		width: 100px;
+	}
+	.nav-icon {
+		font-size: 50px!important;
+		padding: 8px 0px 8px 0px!important;
+		text-align: center!important;
+
+
+	}
+	.nav-text {
+		padding-top: 20px!important;
+		font-size: 20px!important;
+	}
+	#home-text {
+		top: 500px;
+	}
+}
+
 
 .nav-icon {
 	padding: 2px 0px 2px 0px;
