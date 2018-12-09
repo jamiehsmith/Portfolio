@@ -118,7 +118,27 @@ a.link:hover {
 	line-height: 1.4;
 }
 
+#work {
+	position: relative;
+	left: 60px;
+	width: 80%;
+	height: 600px;
+	padding: 50px;
+	/*background-color: lightgray;*/
+	top: 0px;
+	line-height: 1.4;
+}
+
 #skills-text {
+	top: 0px;
+	left: 100px;
+	position: absolute;
+	line-height: 1.4;
+	top: 200px;
+	width: 80%;
+}
+
+#work-text {
 	top: 0px;
 	left: 100px;
 	position: absolute;
@@ -226,3 +246,7 @@ a.link:hover {
     margin-top: -195px;
     background-clip: padding-box;
 }
+
+#languages{ float: left; width: 33%; }
+#software{ float: right; width: 33%; }
+#frameworks{ display: inline-block; width: 33%; }
