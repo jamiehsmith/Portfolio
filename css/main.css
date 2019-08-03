@@ -146,7 +146,7 @@ a.link:hover {
 	top: 200px;
 }
 
-#work-container {
+#home-container, #about-container, #skills-container, #work-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
