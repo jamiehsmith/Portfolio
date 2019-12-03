@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<title>Jamie Smith</title>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	</head>
 	<body>
-		<meta name="viewport" content="width=device-width">
-		<div id="nav-bar">
-			<a href="" class="icon_link"><h1 id="JS-icon">JS</h1></a>
-			<div id="page-nav">
-				<a href="#home"><i id="home-icon" class="nav-icon fas fa-home"></i>
-				<span id="home-icon-text" class="nav-text hidden icon_link">HOME</span></a>
-				<a href="#about"><i id="about-icon" class="nav-icon fas fa-user"></i>
-				<span id="about-icon-text" class="nav-text hidden icon_link">ABOUT</span></a>
-				<a href="#skills"><i id="skills-icon" class="nav-icon fas fa-drafting-compass"></i></a>
-				<span id="skills-icon-text" class="nav-text hidden">SKILLS</span>
-				<a href="#work"><i id="work-icon" class="nav-icon fas fa-file-code"></i></span></a>
-				<span id="work-icon-text" class="nav-text hidden">WORK</span></span>
-				<a href="#contact"><i id="contact-icon" class="nav-icon fas fa-envelope"></i></a>
-				<span id="contact-icon-text" class="nav-text hidden">CONTACT</span>
+			<div id="nav-bar">
+				<a href="" id="js-icon"><h1 id="js-icon-text">JS</h1></a>
+				<div id="page-nav">
+					<nav>
+						<ul class="nav navbar-nav nav-stacked">
+							<li class="nav-item"><a href="#home" class="current"><i id="home-icon" class="nav-icon fas fa-home"></i>
+							<span id="home-icon-text" class="nav-text">HOME</span></a></li>
+							<li class="nav-item"><a href="#about"><i id="about-icon" class="nav-icon fas fa-user"></i>
+							<span id="about-icon-text" class="nav-text">ABOUT</span></a></li>
+							<li class="nav-item"><a href="#skills"><i id="skills-icon" class="nav-icon fas fa-drafting-compass"></i>
+							<span id="skills-icon-text" class="nav-text">SKILLS</span></a></li>
+							<li class="nav-item"><a href="#work"><i id="work-icon" class="nav-icon fas fa-file-code"></i></span>
+							<span id="work-icon-text" class="nav-text">WORK</span></span></a></li>
+							<li class="nav-item"><a href="#contact"><i id="contact-icon" class="nav-icon fas fa-envelope"></i>
+							<span id="contact-icon-text" class="nav-text">CONTACT</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id="links">
+					<ul class="nav navbar-nav nav-stacked">
+						<li class="nav-item-ext"><a href="https://www.linkedin.com/in/jamiehsmith/"><i class="nav-icon-sm fab fa-linkedin"></i></a></li>
+						<li class="nav-item-ext"><a href="https://github.com/jamiehsmith"><i class="nav-icon-sm fab fa-github-square"></i></a></li>
+						<li class="nav-item-ext"><a href="https://stackoverflow.com/story/jamiehsmith"><i class="nav-icon-sm fab fa-stack-overflow"></i></a></li>
+						<li class="nav-item-ext"><a href="https://twitter.com/jamiehsmith"><i class="nav-icon-sm fab fa-twitter-square"></i></a></li>
+					</ul>
+				</div>
 			</div>
-			<div id="links">
-				<a href="https://www.linkedin.com/in/jamiehsmith/"><i class="nav-icon-sm fab fa-linkedin"></i></a><br>
-				<a href="https://github.com/jamiehsmith"><i class="nav-icon-sm fab fa-github-square"></i></a><br>
-				<a href="https://stackoverflow.com/story/jamiehsmith"><i class="nav-icon-sm fab fa-stack-overflow"></i></a><br>
-				<a href="https://twitter.com/jamiehsmith"><i class="nav-icon-sm fab fa-twitter-square"></i></a><br>
-			</div>
-		</div>
+		<main>
 		<div class="container">
 			<div id="home">
 				<div id="home-text">
 					<h2>Hi, I'm Jamie</h2>
-					<h3 style="max-width: 400px; font-size: 20px;">I'm a front-end software developer based in New York, NY. Currently working at <a href="https://www.criticalmention.com" class="link">Critical Mention</a>.</h2><br>
+					<h3 style="max-width: 400px; font-size: 20px;">I'm a front-end software developer based in New York, NY. Currently working at <a href="https://www.criticalmention.com" class="link">Critical Mention</a>.</h2>
 				</div>
-				<img src="img/me.jpg" id="home-picture">
+				<div id="home-picture-wrapper">
+					<img src="img/me.jpg" id="home-picture">
+				</div>
 			</div>
 			<div id="about">
 				<div id="about-text">
@@ -98,6 +107,11 @@
 					</p>
 				</div>
 			</div>
+			<div id="contact">
+			</div>
+		</main>
 		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+
 	</body>
 </html>

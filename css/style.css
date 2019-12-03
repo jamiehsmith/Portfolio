@@ -1,8 +1,9 @@
 html {
 	height: 100%;
+	width: 100%;
 	min-height: 100%;
 	bottom: 0;
-	
+	overflow: auto;
 }
 
 ::-webkit-scrollbar { 
@@ -13,6 +14,7 @@ body {
 	background: white;
 	display: block;
 	font-family: Helvetica;
+	/*position: fixed;*/
 }
 
 a.link:link {
@@ -27,27 +29,11 @@ a.link:hover {
     text-shadow: -0.1em 0 red, 0.1em 0 cyan;
 }
 
-.icon_link {
-	text-decoration: none;
-}
-
-/*.cyan {
-	text-decoration: none;
-	border: none;
-	background-color: transparent;
-	color: rgba(0, 0, 0, 0.7);
-}*/
-
 .container {
 	min-width: 100%;
 	min-height: 100%;
 	height: 100%;
 	width: 100%;
-}
-
-.anaglyph {
-	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
-	/*font-family: Helvetica;*/
 }
 
 #nav-bar {
@@ -63,38 +49,74 @@ a.link:hover {
 	position: fixed;
 }
 
-#home {
-	position: relative;
-	left: 60px;
-	width: 100%;
-	height: 400px;
-	padding: 50px;
-	/*background-color: lightgray;*/
-	top: 0px;
-	line-height: 1.4;
+.nav-text {
+	visibility: hidden;
+	text-decoration: none;
 }
 
-#home-picture {
-	height:275px;
-	right: 25%;
-	top: 150px;
-	position: absolute;
-	border-radius: 50%;
+.nav-item:hover .nav-text {
+	visibility: visible;
+}
+
+.nav-item a:hover{
+    text-decoration: none;
+}
+
+.nav-icon {
+	text-shadow: none;
+}
+
+.nav-item:hover .nav-icon {
+	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
+}
+
+.nav-item a.current .nav-icon {
+	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
+}
+
+.nav-item a.current .nav-text {
+	visibility: visible;
+}
+
+#home {
+	width: 97%;
+	position: relative;
+	left: 60px;
+	height: 100vh;
+	padding: 50px;
+	top: 0px;
+	line-height: 1.4;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #home-text {
+	padding-right: 10%;
+}
+
+#home-picture-wrapper {
+	padding-right: 10%;
+}
+
+#home-picture {
+	height: 200px;
+	border-radius: 50%;
+}
+
+/*#home-text {
 	top: 200px;
 	left: 100px;
 	position: absolute;
-}
+}*/
 
 #about {
 	position: relative;
 	left: 60px;
-	width: 80%;
-	height: 600px;
+	width: 97%;
+	height: 100vh;
 	padding: 50px;
-	/*background-color: lightgray;*/
 	top: 0px;
 	line-height: 1.4;
 }
@@ -105,15 +127,15 @@ a.link:hover {
 	position: absolute;
 	line-height: 1.4;
 	top: 200px;
+	word-wrap: normal;
 }
 
 #skills {
 	position: relative;
 	left: 60px;
-	width: 80%;
-	height: 600px;
+	width: 97%;
+	height: 100vh;
 	padding: 50px;
-	/*background-color: lightgray;*/
 	top: 0px;
 	line-height: 1.4;
 }
@@ -121,10 +143,9 @@ a.link:hover {
 #work {
 	position: relative;
 	left: 60px;
-	width: 80%;
+	width: 97%;
 	height: 600px;
 	padding: 50px;
-	/*background-color: lightgray;*/
 	top: 0px;
 	line-height: 1.4;
 }
@@ -135,7 +156,7 @@ a.link:hover {
 	position: absolute;
 	line-height: 1.4;
 	top: 200px;
-	width: 80%;
+	width: 97%;
 }
 
 #work-text {
@@ -152,40 +173,6 @@ a.link:hover {
 	flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 900px) {
-	#home-picture {
-		right: 20%;
-		height: 200px;
-		top: 190px;
-	}
-	#home-text {
-		top: 200px;
-		left: 50px;
-		position: absolute;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#nav-bar {
-		width: 100px;
-	}
-	.nav-icon {
-		font-size: 50px!important;
-		padding: 8px 0px 8px 0px!important;
-		text-align: center!important;
-
-
-	}
-	.nav-text {
-		padding-top: 20px!important;
-		font-size: 20px!important;
-	}
-	#home-text {
-		top: 500px;
-	}
-}
-
-
 .nav-icon {
 	padding: 2px 0px 2px 0px;
 	color: white;
@@ -196,8 +183,6 @@ a.link:hover {
 }
 
 .nav-text {
-	/*padding: 12px 0px 12px 0px;*/
-	/*padding: 10px 0px 10px 0px;*/
 	color: white;
 	font-size: 12px;
 	font-family: Helvetica;
@@ -207,17 +192,21 @@ a.link:hover {
 	text-align: center;
 }
 
-.hidden {
-	visibility: hidden;
-}
-
-#JS-icon {
+#js-icon-text {
 	color: white;
 	font-size: 35px;
 	font-family: Helvetica;
 	top: 0;
 	margin-top: 10px;
 	text-align: center;
+}
+
+#js-icon:hover{
+    text-decoration: none;
+}
+
+#js-icon:hover #js-icon-text {
+	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
 }
 
 .nav-icon-sm {
@@ -229,13 +218,9 @@ a.link:hover {
 	text-align: center;
 }
 
-/*#home {
-	position: absolute;
-	left: 100px;
-	width: 100%
+.nav-item-ext:hover .nav-icon-sm {
+	text-shadow: -0.1em 0 red, 0.1em 0 cyan;
 }
-*/
-
 
 #links {
 	position: absolute;
