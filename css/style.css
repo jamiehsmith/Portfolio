@@ -19,6 +19,7 @@ body {
 
 a.link:link {
     color: black;
+    text-decoration: underline;
 }
 
 a.link:visited {
@@ -105,72 +106,42 @@ a.link:hover {
 	border-radius: 50%;
 }
 
-/*#home-text {
-	top: 200px;
-	left: 100px;
-	position: absolute;
-}*/
-
-#about {
+#about, #skills, #work, #contact {
 	position: relative;
-	left: 60px;
-	width: 97%;
+	width: 96%;
+	margin-left: 4%;
 	height: 100vh;
-	padding: 50px;
-	top: 0px;
-	line-height: 1.4;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 #about-text {
-	top: 0px;
 	left: 100px;
-	position: absolute;
 	line-height: 1.4;
 	top: 200px;
-	word-wrap: normal;
-}
-
-#skills {
-	position: relative;
-	left: 60px;
-	width: 97%;
-	height: 100vh;
-	padding: 50px;
-	top: 0px;
-	line-height: 1.4;
-}
-
-#work {
-	position: relative;
-	left: 60px;
-	width: 97%;
-	height: 600px;
-	padding: 50px;
-	top: 0px;
-	line-height: 1.4;
+	width: 75%;
 }
 
 #skills-text {
-	top: 0px;
-	left: 100px;
-	position: absolute;
 	line-height: 1.4;
-	top: 200px;
-	width: 97%;
+	width: 75%;
 }
 
-#work-text {
-	top: 0px;
-	left: 100px;
-	position: absolute;
-	line-height: 1.4;
-	top: 200px;
+#skills-columns {
+	display: flex;
+	width: 100%;
 }
 
 #home-container, #about-container, #skills-container, #work-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+}
+
+#skills-container {
+	width: 100%;
+	justify-content: center;
 }
 
 .nav-icon {
@@ -238,6 +209,14 @@ a.link:hover {
     background-clip: padding-box;
 }
 
-#languages{ float: left; width: 33%; }
-#software{ float: right; width: 33%; }
-#frameworks{ display: inline-block; width: 33%; }
+#languages, #software, #frameworks{
+	width: 33%;
+}
+
+#work-text {
+	width: 75%;
+}
+
+#contact-text {
+	width: 75%;
+}
