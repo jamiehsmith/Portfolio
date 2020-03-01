@@ -133,7 +133,13 @@ a.link:hover {
 	width: 100%;
 }
 
-#home-container, #about-container, #skills-container, #work-container {
+#work-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+#home-container, #about-container, #skills-container, .work {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
