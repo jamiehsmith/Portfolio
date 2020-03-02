@@ -116,6 +116,14 @@ a.link:hover {
 	justify-content: center;
 }
 
+#contact {
+	height: 115vh;
+}
+
+#work {
+	height: 175vh;
+}
+
 #about-text {
 	left: 100px;
 	line-height: 1.4;
