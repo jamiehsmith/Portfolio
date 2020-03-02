@@ -144,13 +144,13 @@ a.link:hover {
 #work-container {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 #home-container, #about-container, #skills-container, .work {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 
 #skills-container {
