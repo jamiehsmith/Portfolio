@@ -1,144 +1,219 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<title>Jamie Smith</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162345299-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous" />
+    <title>Jamie Smith</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E1FSW2ZFQR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-		  gtag('config', 'UA-162345299-1');
-		</script>
-	</head>
-	<body>
-			<div id="nav-bar">
-				<a href="" id="js-icon"><h1 id="js-icon-text">JS</h1></a>
-				<div id="page-nav">
-					<nav>
-						<ul class="nav navbar-nav nav-stacked">
-							<li class="nav-item"><a href="#home" class="current"><i id="home-icon" class="nav-icon fas fa-home"></i>
-							<span id="home-icon-text" class="nav-text">HOME</span></a></li>
-							<li class="nav-item"><a href="#about"><i id="about-icon" class="nav-icon fas fa-user"></i>
-							<span id="about-icon-text" class="nav-text">ABOUT</span></a></li>
-							<li class="nav-item"><a href="#skills"><i id="skills-icon" class="nav-icon fas fa-drafting-compass"></i>
-							<span id="skills-icon-text" class="nav-text">SKILLS</span></a></li>
-							<li class="nav-item"><a href="#work"><i id="work-icon" class="nav-icon fas fa-file-code"></i></span>
-							<span id="work-icon-text" class="nav-text">PROJECTS</span></span></a></li>
-							<li class="nav-item"><a href="#contact"><i id="contact-icon" class="nav-icon fas fa-envelope"></i>
-							<span id="contact-icon-text" class="nav-text">CONTACT</span></a></li>
-						</ul>
-					</nav>
-				</div>
-				<div id="links">
-					<ul class="nav navbar-nav nav-stacked">
-						<li class="nav-item-ext"><a href="https://www.linkedin.com/in/jamiehsmith/" target="_blank"><i class="nav-icon-sm fab fa-linkedin"></i></a></li>
-						<li class="nav-item-ext"><a href="https://github.com/jamiehsmith" target="_blank"><i class="nav-icon-sm fab fa-github-square"></i></a></li>
-						<li class="nav-item-ext"><a href="https://stackoverflow.com/users/8419096/jamie-smith" target="_blank"><i class="nav-icon-sm fab fa-stack-overflow"></i></a></li>
-						<li class="nav-item-ext"><a href="https://twitter.com/jamiehsmith" target="_blank"><i class="nav-icon-sm fab fa-twitter-square"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		<main>
-		<div class="container">
-			<div id="home">
-				<div id="home-text">
-					<h2>Hi, I'm Jamie</h2>
-					<h3 style="max-width: 400px; font-size: 20px;">I'm a front-end software developer based in New York, NY. I work at <a href="https://www.photoshelter.com/" class="link" target="_blank">PhotoShelter</a>.</h2>
-				</div>
-				<div id="home-picture-wrapper">
-					<img src="img/me.jpg" id="home-picture">
-				</div>
-			</div>
-			<div id="about">
-				<div id="about-text">
-					<h2>About</h2>
-					<br>
-					<div id="about-container">
-						<span>
-							Code enthusiast who loves building and learning. Experienced in full stack development, specialized in making, debugging and beautifying web applications. Clean code makes me happy. I enjoy working with Javascript, Vue and Python (but keep scrolling to see more).
-							<br><br>
-							Offline my interests include music, traveling, cats, documentaries, and photography.
-						</span>
-					</div>
-				</div>
-			</div>
-			<div id="skills">
-				<div id="skills-text">
-					<h2>Skills</h2>
-					<br>
-					<div id="skills-container">
-						<div id="skills-columns">
-							<div id="languages">					
-								<u>Languages:</u><br>
-								&bull; Javascript<br>
-								&bull; Python<br>
-								&bull; HTML<br>
-								&bull; CSS<br>
-								&bull; jQuery<br>
-								&bull; PHP<br>
-								<br>
-							</div>
-							<div id="frameworks">
-								<u>Frameworks && Environments:</u><br>
-								&bull; Vue<br>
-								&bull; Backbone<br>
-								&bull; Bootstrap<br>
-								&bull; Flexbox<br>
-								&bull; Node.js<br>
-							</div>
-							<div id="software">
-								<u>Systems && Databases:</u><br>
-								&bull; Git<br>
-								&bull; VS Code<br>
-								&bull; MySQL<br>
-								&bull; Amazon Web Services (AWS)<br>
-								&bull; Solr<br>
-								&bull; Jira<br>
-								&bull; Bitbucket<br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="work">
-				<div id="work-text">
-					<h2>Projects</h2>
-					<div id="work-container">
-						<br>
-						<a href="http://www.modifyspotify.com" class="link"><h3>Modify Spotify</h3></a>
-						<div class="work">
-							<div>
-								<img src="img/modifyspotify.png" style="height: 350px;" align="left" border="1" >
-							</div>
-							<div style="padding: 10px; width: 75%;">
-								<p>
-								A web app that renders your top artists, tracks and genres via Spotify's API. Users select from their favorite artists and tracks to make a playlist utilizing Spotify's recommendation engine.
-								<br><br>
-								Front-end is Vue, backend is Node.js and Express.js. Hosted on Render.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="contact">
-				<div id="contact-text">
-					<h2>Contact</h2>
-					<br>
-					<div id="contact-container">
-						Click <a href="mailto:jamiesmith357@gmail.com" class="link">here</a> to drop me a line.
-					</div>
-				</div>
-			</div>
-		</main>
-		</div>
-		<script type="text/javascript" src="js/script.js"></script>
-
-	</body>
+      gtag('config', 'G-E1FSW2ZFQR');
+    </script>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <a href="" id="js-icon"><h1 id="js-icon-text">JS</h1></a>
+      <div id="page-nav">
+        <nav>
+          <ul class="nav navbar-nav nav-stacked">
+            <li class="nav-item">
+              <a href="#home" class="current">
+                <i id="home-icon" class="nav-icon fas fa-home"></i>
+                <span id="home-icon-text" class="nav-text">HOME</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about">
+                <i id="about-icon" class="nav-icon fas fa-user"></i>
+                <span id="about-icon-text" class="nav-text">ABOUT</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills">
+                <i
+                  id="skills-icon"
+                  class="nav-icon fas fa-drafting-compass"></i>
+                <span id="skills-icon-text" class="nav-text">SKILLS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#work">
+                <i id="work-icon" class="nav-icon fas fa-file-code"></i>
+                <span id="work-icon-text" class="nav-text">PROJECTS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact"
+                ><i id="contact-icon" class="nav-icon fas fa-envelope"></i>
+                <span id="contact-icon-text" class="nav-text">CONTACT</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="links">
+        <ul class="nav navbar-nav nav-stacked">
+          <li class="nav-item-ext">
+            <a href="https://www.linkedin.com/in/jamiehsmith/" target="_blank"
+              ><i class="nav-icon-sm fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="nav-item-ext">
+            <a href="https://github.com/jamiehsmith" target="_blank"
+              ><i class="nav-icon-sm fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="nav-item-ext">
+            <a
+              href="https://stackoverflow.com/users/8419096/jamie-smith"
+              target="_blank"
+              ><i class="nav-icon-sm fab fa-stack-overflow"></i
+            ></a>
+          </li>
+          <li class="nav-item-ext">
+            <a href="https://twitter.com/jamiehsmith" target="_blank"
+              ><i class="nav-icon-sm fab fa-twitter-square"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div id="home">
+          <div id="home-text">
+            <h2>Hi, I'm Jamie</h2>
+            <h3 style="max-width: 400px; font-size: 20px">
+              I'm a front-end software developer based in New York, NY. I work
+              at
+              <a
+                href="https://www.photoshelter.com/"
+                class="link"
+                target="_blank"
+                >PhotoShelter</a
+              >.
+            </h3>
+          </div>
+          <div id="home-picture-wrapper">
+            <img src="img/me.jpg" id="home-picture" />
+          </div>
+        </div>
+        <div id="about">
+          <div id="about-text">
+            <h2>About</h2>
+            <br />
+            <div id="about-container">
+              <span>
+                Code enthusiast who loves building and learning. Experienced in
+                full stack development, specialized in making, debugging and
+                beautifying web applications. Clean code makes me happy. I enjoy
+                working with Javascript, Vue and Python (but keep scrolling to
+                see more).
+                <br /><br />
+                Offline my interests include music, traveling, cats,
+                documentaries, and photography.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="skills">
+          <div id="skills-text">
+            <h2>Skills</h2>
+            <br />
+            <div id="skills-container">
+              <div id="skills-columns">
+                <div id="languages">
+                  <u>Languages:</u><br />
+                  &bull; Javascript<br />
+                  &bull; Python<br />
+                  &bull; HTML<br />
+                  &bull; CSS<br />
+                  &bull; jQuery<br />
+                  &bull; PHP<br />
+                  <br />
+                </div>
+                <div id="frameworks">
+                  <u>Frameworks && Environments:</u><br />
+                  &bull; Vue<br />
+                  &bull; Backbone<br />
+                  &bull; Bootstrap<br />
+                  &bull; Flexbox<br />
+                  &bull; Node.js<br />
+                </div>
+                <div id="software">
+                  <u>Systems && Databases:</u><br />
+                  &bull; Git<br />
+                  &bull; VS Code<br />
+                  &bull; MySQL<br />
+                  &bull; Amazon Web Services (AWS)<br />
+                  &bull; Solr<br />
+                  &bull; Jira<br />
+                  &bull; Bitbucket<br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="work">
+          <div id="work-text">
+            <h2>Projects</h2>
+            <div id="work-container">
+              <br />
+              <a href="http://www.modifyspotify.com" class="link"
+                ><h3>Modify Spotify</h3></a
+              >
+              <div class="work">
+                <div>
+                  <img
+                    src="img/modifyspotify.png"
+                    style="height: 350px"
+                    align="left"
+                    border="1" />
+                </div>
+                <div style="padding: 10px; width: 75%">
+                  <p>
+                    A web app that renders your top artists, tracks and genres
+                    via Spotify's API. Users select from their favorite artists
+                    and tracks to make a playlist utilizing Spotify's
+                    recommendation engine.
+                    <br /><br />
+                    Front-end is Vue, backend is Node.js and Express.js. Hosted
+                    on Render.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact">
+          <div id="contact-text">
+            <h2>Contact</h2>
+            <br />
+            <div id="contact-container">
+              Click
+              <a href="mailto:jamiesmith357@gmail.com" class="link">here</a> to
+              drop me a line.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
